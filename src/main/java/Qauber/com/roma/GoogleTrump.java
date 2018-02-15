@@ -17,6 +17,7 @@ public class GoogleTrump {
                 Thread.sleep(3000);
                 System.out.println(cd.findElement(By.xpath("//*[@id=\"resultStats\"]")).getText());
                 //git test
+        cd.quit();
             }
         }
 
