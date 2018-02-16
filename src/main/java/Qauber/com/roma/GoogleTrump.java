@@ -10,11 +10,11 @@ public class GoogleTrump {
                 WebDriver cd = new ChromeDriver();
                 cd.manage().window().maximize();
                 cd.get("https://www.google.com/");
-                Thread.sleep(3000);
-                cd.findElement(By.xpath("//*[@id=\"lst-ib\"]")).sendKeys("Ivanka Trump");
                 Thread.sleep(2000);
+                cd.findElement(By.xpath("//*[@id=\"lst-ib\"]")).sendKeys("Ivanka Trump");
+                Thread.sleep(1000);
                 cd.findElement(By.xpath("//*[@id=\"lst-ib\"]")).submit();
-                Thread.sleep(3000);
+                Thread.sleep(2000);
                 System.out.println(cd.findElement(By.xpath("//*[@id=\"resultStats\"]")).getText());
                 //git test
         cd.quit();
